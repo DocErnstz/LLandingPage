@@ -1,0 +1,98 @@
+@mixin fontType($weight){
+font-family: Montserrat;
+font-size: 3vw;
+font-style: normal;
+font-weight: $weight;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: center;
+}
+#SliderSection{
+    
+    .content{
+        h2{
+            @include fontType(700);
+            color:#31546D;
+        }
+        p{
+            @include fontType(500);
+            color: #FFDD00;
+
+            span{
+                @include fontType(700)
+            }
+        }
+    }
+    .slider{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .fball{
+        
+            svg{
+                width: 20vw;
+                height: 20vw;
+            }
+        }
+        .lball{
+            
+            svg{
+                width: 20vw;
+                height: 20vw;
+            }
+        }
+        .mainball{
+            
+            svg{
+                width: 35vw;
+                height: 35vw;
+            }
+        }
+        
+        
+        
+       
+    }
+     .actions{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .options{
+               display: flex;
+               align-items: center;
+               width: 200px;
+               justify-content: space-between;             
+               svg:nth-child(1){
+                    transform: rotateZ(180deg);
+                }
+                svg:nth-child(1):active{
+                    border: 2px solid grey;
+                    border-radius: 5px;
+                }
+                svg:last-child:active{
+                     border: 2px solid grey;
+                    border-radius: 5px;
+                }
+            
+              
+            }
+             button{
+                 width: 180px;
+                 height: 56px;
+                 background: linear-gradient(90deg, #FFEB6A 0%, #F8D700 100%);
+                 box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.15);
+                 border-radius: 18px;
+                 border: 0;
+                 font-family: Montserrat;
+                 font-style: normal;
+                 font-weight: bold;
+                 font-size: 16px;
+                 line-height: 24px;
+                 text-align: center;
+                 color: #6F6F6F;
+                 margin: 50px 0;
+               }
+        }
+}
