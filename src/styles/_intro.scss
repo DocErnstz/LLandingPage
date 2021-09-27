@@ -1,0 +1,94 @@
+@mixin fontType($weight, $size, $color){
+    font-family: Montserrat;
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    color: $color;
+}
+
+@keyframes SUSLeft {
+        from{
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes SUSRight {
+        from{
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+
+#LandSection{
+    img{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -10px;
+        width: 100%;
+      
+    }
+    
+    .content{
+        position: relative;
+        background-color: red;
+        margin-top: 100px;
+        width: 92%;
+        margin: 0 auto;
+        .text{
+            position: absolute;
+            top: 200px;
+            & > *:nth-child(1){
+                @include fontType(400, 40px, #fff);
+                animation: SUSLeft 0.7s ease-in-out;
+                       animation-fill-mode: forwards;
+                        animation-delay: 1.6s;
+                        opacity: 0;
+                
+            }
+             & > *:nth-child(2){
+                 @include fontType(700, 60px, #fff);
+                 animation: SUSRight 0.7s ease-in-out;
+                       animation-fill-mode: forwards;
+                        animation-delay: 2.4s;
+                        opacity: 0;
+
+             }
+            & > *:nth-child(3){
+                @include fontType(400, 16px, #31546D);
+                width: 70%;
+                margin: 30px 0;
+                animation: SUSRight 0.7s ease-in-out;
+                       animation-fill-mode: forwards;
+                        animation-delay: 2.8s;
+                        opacity: 0;
+             }
+            & > *:nth-child(4){
+                background: linear-gradient(90deg, #FFFFFF 0%, #F1FAFF 100%);
+                box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.15);
+                border-radius: 18px;
+                @include fontType(bold, 16px, #6F6F6F);
+                border: 0;
+                width: 148px;
+                height: 56px;
+                animation: SUSRight 0.7s ease-in-out;
+                       animation-fill-mode: forwards;
+                        animation-delay: 2.6s;
+                        opacity: 0;
+                a{
+                    text-decoration: none;
+                    color: #6F6F6F;
+                }
+                
+            }
+        }
+    }
+}
