@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import BackGroun3 from "../../img/BackGroun3.png";
 import BL from "../../img/BigLight.png";
 import ML from "../../img/MiniLight.png";
-import SL from "../../img/ShadowLight.png";
 import ReactPlayer from "react-player";
 import video from "../../files/video.mp4";
 import emailjs from "emailjs-com";
