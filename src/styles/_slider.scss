@@ -1,0 +1,184 @@
+@mixin fontType($weight){
+font-family: Montserrat;
+font-size: 3vw;
+font-style: normal;
+font-weight: $weight;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: center;
+}
+*{
+    transition: all 0.4s ease-in-out;
+}
+@keyframes blur {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes SUUU {
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes ArrowLeft{
+    from{
+        transform: translateX(50px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes ArrowRight {
+    from {
+        transform: translateX(-50px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+.ArrowLeft{
+    animation: ArrowLeft 1s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+.ArrowRight{
+    animation: ArrowRight 1s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+.bluranim{
+    animation: blur 1s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+.bluranim2{
+    animation: blur 2s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+.SUUC{
+     animation: SUUU 2s ease-in-out;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+#SliderSection{
+    
+    .content{
+        h2{
+            @include fontType(700);
+            color:#31546D;
+            opacity: 0;
+
+        }
+        p{
+            @include fontType(500);
+            color: #FFDD00;
+            opacity: 0;
+            span{
+                @include fontType(700)
+            }
+        }
+    }
+    .slider{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       & > div{
+           width: 20vw;
+           height: 20vw;
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+           &:hover .flip-card-inner{
+               transform: rotateY(180deg);
+                transition: all 0.4s ease-in-out;
+           }
+           .flip-card-inner{
+               width: 100%;
+               height: 100%;
+               position: relative;
+               transform-style: preserve-3d;
+               transition: all 0.4s ease-in-out;
+               .flip-card-front, .flip-card-back {
+                   width: 100%;
+                   height: 100%;
+                   position: absolute;
+                   transition: all 0.4s ease-in-out;
+                   
+                }
+                .flip-card-back{
+                    transform: rotateY(180deg);
+                   
+                }
+           }
+           img{
+               width: 20vw;
+               height: 20vw;
+               transition: all 0.4s ease-in-out;
+           }
+       }
+        
+        
+        
+       
+    }
+     .actions{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .options{
+               display: flex;
+               align-items: center;
+               width: 200px;
+               justify-content: space-between;             
+               svg:nth-child(1){
+                    transform: rotateZ(180deg);
+                }
+                svg:nth-child(1):active{
+                    background: grey;
+                    border-radius: 5px;
+                }
+                svg:last-child:active{
+                    background: grey;
+                    border-radius: 5px;
+                    z-index: 99;
+                }
+                opacity: 0;
+               
+              
+            }
+             button{
+                 width: 180px;
+                 height: 56px;
+                 background: linear-gradient(90deg, #FFEB6A 0%, #F8D700 100%);
+                 box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.15);
+                 border-radius: 18px;
+                 border: 0;
+                 font-family: Montserrat;
+                 font-style: normal;
+                 font-weight: bold;
+                 font-size: 16px;
+                 line-height: 24px;
+                 text-align: center;
+                 color: #6F6F6F;
+                 margin: 50px 0;
+                 opacity: 0;
+                 a{
+                     text-decoration: none;
+                     color: #6F6F6F;
+                 }
+               }
+        }
+}
