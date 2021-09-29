@@ -81,7 +81,7 @@ useScrollPosition(
        <div className="img">
          <div className="imgcontainer" id="images">
            <div className="flexcontainer">
-             <ReactPlayer url={video}   width={"50%"} height={"30%"} playing muted playbackRate={1.75}/>
+             <ReactPlayer url={video}  loop={true} width={"50%"} height={"30%"} playing muted playbackRate={1.75}/>
            </div>
            <div className="flexcontainer">
              <img src={BL} alt="" />
