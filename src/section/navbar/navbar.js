@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 function Navbar() {
   return (
      <section id="LandSection">
-            <ReactPlayer url="https://www.youtube.com/watch?v=DCziNVipvFI"  loop={true} width={"1500px"} height={"1050px"} playing muted autoPlay playbackRate={1.75} className="react-player"/>
+           <ReactPlayer url={video} loop={true} width={"1500px"} height={"1050px"} playing muted autoPlay playbackRate={1.75} className="react-player"/>
            <img src={Curve} alt="" />
       <div className="navbar">
             <div className="nav">
