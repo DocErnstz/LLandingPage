@@ -1,6 +1,6 @@
 import React from "react";
 import file from "../../files/AboutUs.pdf";
-import video from "../../files/video.mp4";
+import video from "../../files/Clock_Face_3Videvo.mov";
 import Curve from "../../img/Curveimg.png";
 import ReactPlayer from "react-player";
 function Navbar() {
