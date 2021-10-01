@@ -19,7 +19,7 @@ function Contact() {
 });
 useScrollPosition(
   ({ prevPos, currPos }) => {
-   if(Math.abs(currPos.y) > 1150){
+   if(Math.abs(currPos.y) > 1250){
      if(!document.getElementById("titleContact").classList.contains("SUUC")){
         document.getElementById("titleContact").classList.add("SUUC");
       }
@@ -44,6 +44,9 @@ useScrollPosition(
       }
       if(!document.getElementById("images").children[1].classList.contains("sizeAppear")){
         document.getElementById("images").children[1].classList.add("sizeAppear");
+      }
+      if(!document.getElementById("images").children[2].classList.contains("sizeAppear")){
+        document.getElementById("images").children[2].classList.add("sizeAppear");
       }
 
     
