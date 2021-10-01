@@ -7,6 +7,14 @@
 body{
     transition: all 0.4s ease-in-out;
 }
+@keyframes showUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
 #LandSection{
     position: relative;
     overflow: hidden;
@@ -22,7 +30,10 @@ body{
         left: 0;
         width:  100%;
         height: 100%;
-       opacity: 0.5;
+        animation: showUp 0.7s ease-in-out;
+         animation-fill-mode: forwards;
+        animation-delay: 3s;
+       opacity: 0;
        
     }
     @keyframes SUSLeft {

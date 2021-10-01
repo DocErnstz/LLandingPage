@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import file from "../../files/AboutUs.pdf";
 import Curve from "../../img/Curveimg.png";
 import ReactPlayer from "react-player";
 function Navbar() {
+  useEffect(() => {
+      setTimeout(() => {
+           window.scrollTo(0, 0);
+      }, 1000);
+     
+  }, [])
   return (
      <section id="LandSection">
            <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_experiencia_versi%C3%B3n_final.mp4" loop={true} width={"1500px"} height={"1050px"} playing muted autoPlay playbackRate={1.75} className="react-player"/>
