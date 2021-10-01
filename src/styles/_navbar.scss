@@ -99,6 +99,7 @@ body{
            }
            .info{
                display: flex;
+               align-items: center;
                @keyframes SU {
                    from{
                        opacity: 0;
@@ -121,6 +122,7 @@ body{
                    width: 180px;
                    height: 56px;
                    border: 0;
+                   background: linear-gradient(90deg, #FFFFFF 0%, #FFEB6A 50.52%);
                    filter: drop-shadow(0px 4px 50px rgba(77, 107, 185, 0.15));
                    text-decoration: none;
                   display: flex;
