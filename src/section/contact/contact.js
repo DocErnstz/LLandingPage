@@ -45,8 +45,8 @@ useScrollPosition(
       if(!document.getElementById("images").children[1].classList.contains("sizeAppear")){
         document.getElementById("images").children[1].classList.add("sizeAppear");
       }
-      if(!document.getElementById("images").children[2].classList.contains("sizeAppear")){
-        document.getElementById("images").children[2].classList.add("sizeAppear");
+      if(!document.getElementById("images").children[2].classList.contains("showUp")){
+        document.getElementById("images").children[2].classList.add("showUp");
       }
 
     

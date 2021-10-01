@@ -57,6 +57,19 @@ $pos: 100px;
   }
 
 }
+@keyframes showUp{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.showUp{
+  animation: showUp 1s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards; 
+}
 .sizeAppear{
   animation: sizeSU 1s ease-in-out;
     animation-delay: 0.4s;
