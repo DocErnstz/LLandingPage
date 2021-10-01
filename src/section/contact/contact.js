@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import BackGroun3 from "../../img/BackGroun3.png";
 import BL from "../../img/BigLight.png";
 import ML from "../../img/MiniLight.png";
+import SL from "../../img/ShadowLight.png";
 import ReactPlayer from "react-player";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
@@ -44,9 +45,7 @@ useScrollPosition(
       if(!document.getElementById("images").children[1].classList.contains("sizeAppear")){
         document.getElementById("images").children[1].classList.add("sizeAppear");
       }
-      if(!document.getElementById("images").children[2].classList.contains("sizeAppear")){
-        document.getElementById("images").children[2].classList.add("sizeAppear");
-      }
+
     
    }
     
@@ -80,15 +79,14 @@ useScrollPosition(
        <div className="img">
          <div className="imgcontainer" id="images">
            <div className="flexcontainer">
-             <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_ojo_version_final.mp4" loop={true} width={"50%"} height={"30%"} playing muted playbackRate={1.75}/>
+             <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_ojo_version_final.mp4" loop={true} width={"30vw"} height={"30vw"} playing muted playbackRate={1.75}/>
            </div>
            <div className="flexcontainer">
              <img src={BL} alt="" />
+           </div> 
+           <div className="flexcontainer">
+             <img src={SL} alt="" />
            </div>
-          <div className="flexcontainer">
-             <img src={ML} alt="" />
-           </div>
-          
          </div>
           
        
