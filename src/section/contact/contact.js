@@ -3,7 +3,7 @@ import BackGroun3 from "../../img/BackGroun3.png";
 import BL from "../../img/BigLight.png";
 import ML from "../../img/MiniLight.png";
 import ReactPlayer from "react-player";
-import video from "../../files/video.mp4";
+import video from "../../files/Clock_Face_3Videvo.mov";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
@@ -81,7 +81,7 @@ useScrollPosition(
        <div className="img">
          <div className="imgcontainer" id="images">
            <div className="flexcontainer">
-             <ReactPlayer url={video}   width={"50%"} height={"30%"} playing muted playbackRate={1.75}/>
+             <ReactPlayer url={video}  loop={true} width={"50%"} height={"30%"} playing muted playbackRate={1.75}/>
            </div>
            <div className="flexcontainer">
              <img src={BL} alt="" />

@@ -1,12 +1,12 @@
 import React from "react";
 import file from "../../files/AboutUs.pdf";
-import video from "../../files/video.mp4";
+import video from "../../files/Clock_Face_3Videvo.mov";
 import Curve from "../../img/Curveimg.png";
 import ReactPlayer from "react-player";
 function Navbar() {
   return (
      <section id="LandSection">
-            <ReactPlayer url={video}  width={"1500px"} height={"1050px"} playing muted playbackRate={1.75} className="react-player"/>
+           <ReactPlayer url={video} loop={true} width={"1500px"} height={"1050px"} playing muted autoPlay playbackRate={1.75} className="react-player"/>
            <img src={Curve} alt="" />
       <div className="navbar">
             <div className="nav">
