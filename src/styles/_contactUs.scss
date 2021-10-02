@@ -16,17 +16,18 @@ $pos: 100px;
          opacity: 1;
     }
 }
-
-@keyframes SUUU {
+@keyframes SUUUC {
     from{
-       
+       transform: translateX(-50px);
         opacity: 0;
     }
     to{
-      
+        transform: translateX(0px);
         opacity: 1;
     }
 }
+
+
 @keyframes ArrowLeft{
     from{
         transform: translateX(50px);
@@ -117,11 +118,7 @@ $pos: 100px;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
-.SUUC{
-     animation: SUUU 2s ease-in-out;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
-}
+
 .disabled {
   pointer-events: none;
   cursor: default;
@@ -183,33 +180,83 @@ html, body {
             position: absolute;
             top: 0;
             right: 0;
-            width: 43vw;
-            height: 41vw;
+            width: 0vw;
+            height: 0vw;
+            opacity: 0;
             
           }
           img:nth-child(3){
             position: absolute;
             top: 4vw;
             right: 0;
-            width: 43vw;
-            height: 41vw;
+            width: 0vw;
+            height: 0vw;
             object-fit: contain;
+            opacity: 0;
            
           }
         }
         .icontent{
           width: 50%;
+          @keyframes comeandback {
+            0%{
+              left: 0;
+              width: 0%;
+              height: 100%;
+            }
+            25%{
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+            75%{
+              right: 0;
+              width: 100%;
+              height: 100%;
+            
+            }
+            100%{
+              right: 0;
+              width: 0%;
+              height: 100%;
+            
+            }
+          }
            h3{
-opacity: 0;
-         font-family: Montserrat Alternates;
-font-style: normal;
-font-weight: bold;
-font-size: 6vw;
-line-height: 5vw;
-text-align: left;
-color: #FFDD00;
- 
-       }
+             position: relative;
+             opacity: 0;
+             font-family: Montserrat Alternates;
+             font-style: normal;
+             font-weight: bold;
+             font-size: 6vw;
+             line-height: 5vw;
+             width: 90%;
+             text-align: left;
+             color: #FFDD00;
+             
+             transition: all 0.4s ease-in-out;
+            }
+            .comeandback:after{
+                animation: comeandback 0.7s ease-in-out;
+               animation-fill-mode: forwards;
+               animation-delay: 1s;
+            }
+            .comeandback{
+                animation: showUp 1s ease-in-out;
+               animation-fill-mode: forwards;
+               animation-delay: 0.5s;
+            }
+          h3:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 0%;
+            height: 100%;
+            background-color: yellow;
+            transition: all 0.4s ease-in-out;
+           
+          }
+
        form{
          display: flex;
          flex-direction: column;

@@ -22,23 +22,23 @@ function Contact() {
 useScrollPosition(
   ({ prevPos, currPos }) => {
    if(Math.abs(currPos.y) > 1000){
-     if(!document.getElementById("titleContact").classList.contains("SUUC")){
-        document.getElementById("titleContact").classList.add("SUUC");
+     if(!document.getElementById("titleContact").classList.contains("comeandback")){
+        document.getElementById("titleContact").classList.add("comeandback");
       }
-       if(!document.getElementById("nombre").classList.contains("SUUC")){
-        document.getElementById("nombre").classList.add("SUUC");
+       if(!document.getElementById("nombre").classList.contains("bluranim2")){
+        document.getElementById("nombre").classList.add("bluranim2");
       }
-      if(!document.getElementById("email").classList.contains("SUUC")){
-        document.getElementById("email").classList.add("SUUC");
+      if(!document.getElementById("email").classList.contains("bluranim2")){
+        document.getElementById("email").classList.add("bluranim2");
       }
-      if(!document.getElementById("Mensaje").classList.contains("SUUC")){
-        document.getElementById("Mensaje").classList.add("SUUC");
+      if(!document.getElementById("Mensaje").classList.contains("bluranim2")){
+        document.getElementById("Mensaje").classList.add("bluranim2");
       }
-      if(!document.getElementById("compañia").classList.contains("SUUC")){
-        document.getElementById("compañia").classList.add("SUUC");
+      if(!document.getElementById("compañia").classList.contains("bluranim2")){
+        document.getElementById("compañia").classList.add("bluranim2");
       }
-       if(!document.getElementById("consulta").classList.contains("SUUC")){
-        document.getElementById("consulta").classList.add("SUUC");
+       if(!document.getElementById("consulta").classList.contains("bluranim2")){
+        document.getElementById("consulta").classList.add("bluranim2");
       }
 
       if(!document.getElementById("images").children[0].classList.contains("videoAppear")){
