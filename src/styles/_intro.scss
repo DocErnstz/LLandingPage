@@ -61,9 +61,10 @@
             top: 22vw;
             & > *:nth-child(1){
                 @include fontType(400, 3vw, #fff);
+                 
                 animation: SUSLeft 0.7s ease-in-out;
                        animation-fill-mode: forwards;
-                        animation-delay: 1.6s;
+                        animation-delay: 3s;
                         opacity: 0;
                 
             }
@@ -71,7 +72,7 @@
                  @include fontType(700, 5vw, #fff);
                  animation: SUSRight 0.7s ease-in-out;
                        animation-fill-mode: forwards;
-                        animation-delay: 2.4s;
+                        animation-delay: 3.4s;
                         opacity: 0;
 
              }
@@ -85,7 +86,7 @@
                 border: 0;
                 width: 10vw;
                 height: 4vw;
-                animation: SUSRight 0.7s ease-in-out;
+                animation: SUSLeft 2.7s ease-in-out;
                        animation-fill-mode: forwards;
                         animation-delay: 2.6s;
                         opacity: 0;

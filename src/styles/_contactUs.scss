@@ -19,11 +19,11 @@ $pos: 100px;
 
 @keyframes SUUU {
     from{
-        transform: translateY(-50px);
+       
         opacity: 0;
     }
     to{
-        transform: translateY(0px);
+      
         opacity: 1;
     }
 }
@@ -138,6 +138,7 @@ html, body {
   z-index: 99;
 }
 #contactUs{
+  
     overflow: hidden;
     position: relative;
     background-repeat: no-repeat;
