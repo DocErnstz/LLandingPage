@@ -5,9 +5,9 @@ import ReactPlayer from "react-player";
 import NCurve from "../../img/NCurve.png";
 function Navbar() {
   useEffect(() => {
-      setTimeout(() => {
+      
            window.scrollTo(0, 0);
-      }, 1000);
+      
      
   }, [])
   return (

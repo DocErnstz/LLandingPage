@@ -15,7 +15,8 @@ function Slider() {
   const [stateSrc, setStateSrc] = useState(["Actuar", "Pensar", "Parar"])
 useScrollPosition(
   ({ prevPos, currPos }) => {
-    if(Math.abs(currPos.y) > 300){
+    console.log(currPos.y);
+    if(Math.abs(currPos.y) > 200){
       if(!document.getElementById("title").classList.contains("bluranim")){
         document.getElementById("title").classList.add("bluranim");
       }

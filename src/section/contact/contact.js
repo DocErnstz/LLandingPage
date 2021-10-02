@@ -3,8 +3,10 @@ import BackGroun3 from "../../img/BackGroun3.png";
 import BL from "../../img/BigLight.png";
 import ML from "../../img/MiniLight.png";
 import SL from "../../img/ShadowLight.png";
+import background from "../../img/BackGroun3.png";
 import ReactPlayer from "react-player";
 import emailjs from "emailjs-com";
+
 import { useForm } from "react-hook-form";
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
@@ -19,7 +21,7 @@ function Contact() {
 });
 useScrollPosition(
   ({ prevPos, currPos }) => {
-   if(Math.abs(currPos.y) > 1250){
+   if(Math.abs(currPos.y) > 1000){
      if(!document.getElementById("titleContact").classList.contains("SUUC")){
         document.getElementById("titleContact").classList.add("SUUC");
       }
@@ -39,14 +41,14 @@ useScrollPosition(
         document.getElementById("consulta").classList.add("SUUC");
       }
 
-      if(!document.getElementById("images").children[0].classList.contains("sizeAppear")){
-        document.getElementById("images").children[0].classList.add("sizeAppear");
+      if(!document.getElementById("images").children[0].classList.contains("videoAppear")){
+        document.getElementById("images").children[0].classList.add("videoAppear");
       }
       if(!document.getElementById("images").children[1].classList.contains("sizeAppear")){
         document.getElementById("images").children[1].classList.add("sizeAppear");
       }
-      if(!document.getElementById("images").children[2].classList.contains("showUp")){
-        document.getElementById("images").children[2].classList.add("showUp");
+      if(!document.getElementById("images").children[2].classList.contains("sizeAppear")){
+        document.getElementById("images").children[2].classList.add("sizeAppear");
       }
 
     
@@ -78,24 +80,11 @@ useScrollPosition(
   }
   return (
      <section id="contactUs">
+        <img src={background} alt="" />
       
-       <div className="img">
-         <div className="imgcontainer" id="images">
-           <div className="flexcontainer">
-             <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_ojo_version_final.mp4" loop={true} width={"30vw"} height={"30vw"} playing muted playbackRate={1.75}/>
-           </div>
-           <div className="flexcontainer">
-             <img src={BL} alt="" />
-           </div> 
-           <div className="flexcontainer">
-             <img src={SL} alt="" />
-           </div>
-         </div>
-          
-       
-       </div> 
         <div className="container">
           <div className="content">
+            
             <div className="icontent">
               <h3 id="titleContact">Contact Us</h3>
              <form onSubmit={sendEmail}>
@@ -106,6 +95,11 @@ useScrollPosition(
                <input 
                type="submit" id="consulta"  value="Consulta"/>
              </form>
+            </div>
+            <div className="img" id="images">
+             <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_ojo_version_final.mp4" loop={true} width={"43vw"} height={"41vw"} playing muted playbackRate={1.75}/>
+             <img src={BL} alt="" />
+             <img src={SL} alt="" />
             </div>
              
           </div>
