@@ -110,16 +110,16 @@ useScrollPosition(
      <section id="SliderSection">
         <div className="content">
             <h2 id="title">La vida te pide desiciones</h2>
-            <p id="textTitle">te damos un <span>espacio</span> y un <span>metodo</span> para...</p>
+            <p id="textTitle">te damos un <span>espacio</span> y un <span>método</span> para...</p>
         </div>
         <div className="slider">
           <div id="fballcontainer" className="fball">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                 <img src={require(`../../img/${stateSrc[0] + "F.png"}`).default} alt="Avatar" />
+                 <img src={require(`../../img/${stateSrc[2] + "F.png"}`).default} alt="Avatar" />
               </div>
                <div className="flip-card-back">
-                 <img src={require(`../../img/${stateSrc[0] + "B.png"}`).default} alt="Avatar" />
+                 <img src={require(`../../img/${stateSrc[2] + "B.png"}`).default} alt="Avatar" />
               </div>
             </div>
            
@@ -138,10 +138,10 @@ useScrollPosition(
            <div className="lball" id="lballcontainer">
              <div className="flip-card-inner">
                <div className="flip-card-front">
-                   <img src={require(`../../img/${stateSrc[2] + "F.png"}`).default} alt="Avatar" />
+                   <img src={require(`../../img/${stateSrc[0] + "F.png"}`).default} alt="Avatar" />
                </div>
                <div className="flip-card-back">
-                   <img src={require(`../../img/${stateSrc[2] + "B.png"}`).default} alt="Avatar" />
+                   <img src={require(`../../img/${stateSrc[0] + "B.png"}`).default} alt="Avatar" />
                </div>
                  
              </div>  

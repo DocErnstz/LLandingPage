@@ -52,8 +52,8 @@ $pos: 100px;
     opacity: 0;
   }
   to{
-    width: 43vw;
-    height: 41vw;
+    width: 40vw;
+    height: 38vw;
     opacity: 1;
   }
 
@@ -68,8 +68,8 @@ $pos: 100px;
    }
   100% {
     opacity: 0.5;
-    width: 43vw;
-    height: 41vw; 
+    width: 40vw;
+    height: 38vw; 
     clip-path: circle(13vw at center); 
   }
 }
@@ -157,12 +157,16 @@ html, body {
       width: 100%;
       height: 100%;
       .content{
-        width: 80%;
+        width: 81%;
         margin: 0 auto;
+        margin-top: 5vw;
         display:  flex;
+        
         .img{
           position: relative;
           width: 50%;
+          transform: translateX(5vw);
+          
           div{
             position: absolute;
             top: 0;
@@ -191,6 +195,7 @@ html, body {
             right: 0;
             width: 0vw;
             height: 0vw;
+            transform: translate(0.5vw, 1vw);
             object-fit: contain;
             opacity: 0;
            
@@ -228,9 +233,9 @@ html, body {
              font-family: Montserrat Alternates;
              font-style: normal;
              font-weight: bold;
-             font-size: 6vw;
+             font-size: 5vw;
              line-height: 5vw;
-             width: 90%;
+             width: 80%;
              text-align: left;
              color: #FFDD00;
              
@@ -263,52 +268,74 @@ html, body {
         width: auto;
         margin-top: 3vw;
          align-items: left;
+         @mixin fontType($weight){
+           font-family: Montserrat;
+           font-style: normal;
+           font-weight: $weight;
+           font-size: 0.97vw;
+           line-height: 3.47vw;
+           color: #fff;
+          }
          textarea {
            background: #C4C4C4;
            border-radius: 2vw;
-           width: 33vw;
-           padding: 1vw;
-           margin: 1vw 0px;
-           font-size: 1vw;
+           width: 28vw;
+           height: 8.1vw;
+            padding: 0.2vw 1.72vw;
+           margin-top: 0.91vw;
            border: 0;
            opacity: 0;
            resize: none;
+           @include fontType(normal);
+         }
+         textarea::placeholder{
+           color: #fff;
          }
          input[type=name]{
            background: #C4C4C4;
            border-radius: 61px;
-           width: 33vw;
-           padding: 1vw;
-           margin: 1vw 0;
-           font-size: 1vw;
+           width: 28vw;
+          
+           margin-top: 0.91vw;
+            padding: 0.2vw 1.72vw;
            border: 0;
             opacity: 0;
+            @include fontType(normal);
+         }
+         input[type=name]:nth-child(1){
+           margin-top: 0;
+         }
+         input[type=name]::placeholder{
+           color: #fff;
          }
          input[type=email]{
            background: #C4C4C4;
            border-radius: 61px;
-           width: 33vw;
-           padding: 1vw;
+           width: 28vw;
+           padding: 0.2vw 1.72vw;
             opacity: 0;
-           margin: 1vw 0;
+           margin-top: 0.91vw;
            border: 0;
-           font-size: 1vw;
+          @include fontType(normal);
+         }
+         input[type=email]::placeholder{
+           color: #fff;
          }
       
          input[type=submit]{
            box-sizing: border-box;
            border: none;
-       
+           margin-top: 1.94vw;
              border-radius: 61px;
-           width: 12vw;
-           height: 4vw;
-           font-size: 1vw;
+           width: 12.5vw;
+           height: 3.88vw;
+           font-size: 1.11vw;
            font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
-font-size: 1vw;
+
  opacity: 0;
-line-height: calc(2vw);
+line-height: 1.66vw;
 /* identical to box height, or 133% */
 
 text-align: center;
