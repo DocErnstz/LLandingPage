@@ -5,11 +5,15 @@ import ReactPlayer from "react-player";
 import NCurve from "../../img/NCurve.png";
 function Navbar() {
   useEffect(() => {
-           window.scrollTo(0, 0);
+     
+          setTimeout(() => {
+              window.scrollTo(0, 0);   
+          }, 1000);
+           
   }, [])
   return (
      <section id="LandSection">
-           <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_experiencia_versi%C3%B3n_final.mp4" loop={true} width={"1500px"} height={"850px"} playing  muted className="react-player"/>
+           <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_experiencia_versi%C3%B3n_final.mp4" loop={true} width={"104.1vw"} height={"59vw"} playing  muted className="react-player"/>
            <div className="blend">
                 <img src={NCurve} alt="" />
                <div></div>

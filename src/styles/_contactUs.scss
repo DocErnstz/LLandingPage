@@ -68,8 +68,8 @@ $pos: 100px;
    }
   100% {
     opacity: 0.5;
-    width: 40vw;
-    height: 38vw; 
+    width: 26vw;
+    height: 26vw; 
     clip-path: circle(13vw at center); 
   }
 }
@@ -169,15 +169,18 @@ html, body {
           
           div{
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 5.6vw;
+            left: 7.3vw;
              
              opacity: 0;
              z-index: 99;
-             clip-path: circle(0vw at center);
+             clip-path: circle(13vw at center);
+             width: 0vw;
+             height: 0vw;
              video{
                border-radius: 10px;
                object-fit: cover;
+              
               }
           }
           img:nth-child(2){
@@ -186,7 +189,7 @@ html, body {
             right: 0;
             width: 0vw;
             height: 0vw;
-            opacity: 0;
+            opacity: 1;
             
           }
           img:nth-child(3){
@@ -197,7 +200,7 @@ html, body {
             height: 0vw;
             transform: translate(0.5vw, 1vw);
             object-fit: contain;
-            opacity: 0;
+            opacity: 1;
            
           }
         }

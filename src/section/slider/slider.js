@@ -150,7 +150,7 @@ useScrollPosition(
            </div>
            
         <div className="actions">
-          <button id="descrubicomo"><a href={file} download="true" id="button">Descubri Como</a></button>
+          <button id="descrubicomo"><a href={file} download="true" id="button">Descubre Como</a></button>
         </div>
     </section>
     

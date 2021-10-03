@@ -40,8 +40,7 @@ useScrollPosition(
        if(!document.getElementById("consulta").classList.contains("bluranim2")){
         document.getElementById("consulta").classList.add("bluranim2");
       }
-
-      if(!document.getElementById("images").children[0].classList.contains("videoAppear")){
+         if(!document.getElementById("images").children[0].classList.contains("videoAppear")){
         document.getElementById("images").children[0].classList.add("videoAppear");
       }
       if(!document.getElementById("images").children[1].classList.contains("sizeAppear")){
@@ -50,8 +49,6 @@ useScrollPosition(
       if(!document.getElementById("images").children[2].classList.contains("sizeAppear")){
         document.getElementById("images").children[2].classList.add("sizeAppear");
       }
-
-    
    }
     
   },
@@ -97,7 +94,7 @@ useScrollPosition(
              </form>
             </div>
             <div className="img" id="images">
-             <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_ojo_version_final.mp4" loop={true} width={"43vw"} height={"41vw"} playing muted playbackRate={1.75}/>
+              <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_ojo_version_final.mp4" loop={true} width={"26vw"} height={"26vw"} playing muted playbackRate={1.75}/>
              <img src={BL} alt="" />
              <img src={SL} alt="" />
             </div>
