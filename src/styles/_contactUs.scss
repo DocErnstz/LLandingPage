@@ -288,8 +288,14 @@ html, body {
            resize: none;
            @include fontType(normal);
          }
+         
          textarea::placeholder{
            color: #fff;
+         }
+         textarea:focus{
+            outline: none !important;
+    border-color: #eeff00;
+    box-shadow: 0 0 10px #eeff00;
          }
          input[type=name]{
            background: #C4C4C4;
@@ -302,6 +308,11 @@ html, body {
             opacity: 0;
             @include fontType(normal);
          }
+         input:focus { 
+    outline: none !important;
+    border-color: #eeff00;
+    box-shadow: 0 0 10px #eeff00;
+ }
          input[type=name]:nth-child(1){
            margin-top: 0;
          }
@@ -346,8 +357,8 @@ box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.15);
 border-radius: 18px;
          }
          input[type=submit]:active{
-           background-color: red;
-           border: 3px solid grey;
+           background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+
          }
        }
         }
