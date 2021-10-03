@@ -9,7 +9,7 @@ function Navbar() {
   }, [])
   return (
      <section id="LandSection">
-           <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_experiencia_versi%C3%B3n_final.mp4" loop={true} width={"1500px"} height={"850px"} playing muted autoPlay  className="react-player"/>
+           <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_experiencia_versi%C3%B3n_final.mp4" loop={true} width={"1500px"} height={"850px"} playing  autoPlay  className="react-player"/>
            <div className="blend">
                 <img src={NCurve} alt="" />
                <div></div>
