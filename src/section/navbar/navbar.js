@@ -1,11 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import file from "../../files/AboutUs.pdf";
 import Curve from "../../img/Curveimg.png";
 import ReactPlayer from "react-player";
 import NCurve from "../../img/NCurve.png";
 import IG from "../../img/Instagram.png";
 import LI from "../../img/Linkedin.png";
+import ON from "../../img/SoundON.png";
+import OFF from "../../img/SoundOFF.png";
 function Navbar() {
+    const [ isMuted, setIsMuted ] = useState(true);
   useEffect(() => {
      
           setTimeout(() => {
@@ -13,9 +16,16 @@ function Navbar() {
           }, 1000);
            
   }, [])
+  const setMute = () => {
+      setIsMuted(!isMuted);
+  }
   return (
      <section id="LandSection">
-           <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_experiencia_versi%C3%B3n_final.mp4" loop={true} width={"104.1vw"} height={"59vw"} playing  muted className="react-player"/>
+         {
+             isMuted ? <img className="soundIcon" onClick={() => setMute()} src={OFF} alt="" /> : (<img className="soundIcon" onClick={() => setMute()} src={ON} alt="" />)
+         }
+         
+           <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_experiencia_versi%C3%B3n_final.mp4" loop={true} width={"104.1vw"} height={"59vw"} playing muted={isMuted} className="react-player"/>
            <div className="blend">
                 <img src={NCurve} alt="" />
                <div></div>
@@ -36,7 +46,7 @@ function Navbar() {
                 <div className="info">
                     <nav>
                     <ul>
-                         <li><a href=""><img src={IG} alt="" /></a></li>
+                         <li><a href="https://www.instagram.com/thinkweek.company/"><img src={IG} alt="" /></a></li>
                         <li><a href="https://www.linkedin.com/company/thinkweek"><img src={LI} alt="" /></a></li>
                                           
                     </ul>

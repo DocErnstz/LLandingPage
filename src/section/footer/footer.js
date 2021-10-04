@@ -12,8 +12,8 @@ function Footer() {
                    <div>
                        <h3>Seguinos en redes</h3>
                     <div className="row">
-                        <img src={IG} alt="" />
-                        <img src={LI} alt="" />
+                        <a href="https://www.instagram.com/thinkweek.company/"><img src={IG} alt="" /></a>
+                        <a href="https://www.linkedin.com/company/thinkweek"><img src={LI} alt="" /></a>
                     </div>
                        
                    </div>

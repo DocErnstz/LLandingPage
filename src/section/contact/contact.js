@@ -59,7 +59,7 @@ useScrollPosition(
 
    const handleChange = (e) => {
     settemParams({ ...temParams, [e.target.name]: e.target.value });
-    console.log(temParams);
+    
   };
        const { register, handleSubmit, watch, formState: { errors } } = useForm();
   
@@ -88,7 +88,7 @@ useScrollPosition(
               <h3 id="titleContact">Contact Us!</h3>
              <form onSubmit={sendEmail}>
                <input type="name"  id="nombre" name="nombre" placeholder="Nombre Completo"  required onChange={handleChange}/>
-               <input type="name" id="compañia" name="compañia" placeholder="Nombre de compañia" onChange={handleChange} pattern="+54 9 11 [0-9]{4}-[0-9]{4}"/>
+               <input type="name" id="compañia" name="compañia" placeholder="Nombre de compañia" onChange={handleChange} />
                <input type="email" id="email" name="email" placeholder="Email" required />
                <textarea type="text" rows="5" cols="50" id="Mensaje" maxlength="165" name="Mensaje" placeholder="Mensaje" required onChange={handleChange}/>
                <input 

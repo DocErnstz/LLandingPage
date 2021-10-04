@@ -1,6 +1,3 @@
-$pos: 100px;
-
-
 
 @mixin size($swidth, $sheight){
   width: $swidth;
@@ -16,35 +13,10 @@ $pos: 100px;
          opacity: 1;
     }
 }
-@keyframes SUUUC {
-    from{
-       transform: translateX(-50px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
 
 
-@keyframes ArrowLeft{
-    from{
-        transform: translateX(50px);
-    }
-    to{
-        transform: translateX(0px);
-    }
-}
-@keyframes ArrowRight {
-    from {
-        transform: translateX(-50px);
-    }
-    to{
-        transform: translateX(0px);
-    }
-    
-}
+
+
 @keyframes sizeSU{
   from{
     width: 0vw;
@@ -75,44 +47,18 @@ $pos: 100px;
 }
 
 
-@keyframes showUp{
-  from{
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .videoAppear{
   animation: VSU 1s ease-in-out;
     animation-delay: 0.4s;
     animation-fill-mode: forwards; 
 }
-.showUp{
-  animation: showUp 1s ease-in-out;
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards; 
-}
+
 .sizeAppear{
   animation: sizeSU 1s ease-in-out;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
-.ArrowLeft{
-    animation: ArrowLeft 1s ease-in-out;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards;
-}
-.ArrowRight{
-    animation: ArrowRight 1s ease-in-out;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards;
-}
-.bluranim{
-    animation: blur 1s ease-in-out;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards;
-}
+
 .bluranim2{
     animation: blur 2s ease-in-out;
     animation-delay: 0.4s;

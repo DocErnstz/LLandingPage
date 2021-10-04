@@ -7,11 +7,9 @@ import PensarB from "../../img/PensarB.png";
 import ActuarF from "../../img/ActuarF.png";
 import ActuarB from "../../img/ActuarB.png";
 import file from "../../files/AboutUs.pdf";
-const initialStateSrc = ["Actuar", "Pensar", "Parar"];
+
 function Slider() {
-  const [index, setIndex] = useState(1);
-  const [state, setState] = useState(["#FFDD00", "#C4C4C4", "white"]);
-  const [statePoints, setStatePoints] = useState(["#C4C4C4", "#FFDD00", "#C4C4C4"]);
+  
   const [stateSrc, setStateSrc] = useState(["Actuar", "Pensar", "Parar"])
 useScrollPosition(
   ({ prevPos, currPos }) => {
@@ -45,60 +43,8 @@ useScrollPosition(
   },
   []
 )
-  useEffect(() => {
-    setTimeout(() => {
-      console.log(document.documentElement.scrollHeight - document.documentElement.clientHeight);
-    }, 2000)
-     
-  }, []);
- 
-  const next = (e) => {
-    
-    let findex = index;
-    
-    //console.log(findex);
-   if(e == "p"){
-     setIndex(index + 1);
-     findex = findex + 1;
-     
-   
-     if(findex > 2){
-       setIndex(0);
-       findex = 0;
-        //console.log(findex);
-     }
-     
-   } else {
-     //console.log("naa");
-     setIndex(index - 1);
-     findex = findex - 1;
-    // console.log(findex);
-     if(findex < 0){
-       
-       setIndex(2);
-       findex = 2;
-        //console.log(findex);    
-     }
-      
-   }
-   let Left = findex + 2;
-   let Right = findex + 1;
-   
-   if(Left > 2){
-     Left = Left - 3;
-   }
-   if(Right > 2){
-     Right = Right - 3;
-   }
-    console.log([Left, findex, Right]);
   
   
- document.getElementById("pointf").style["color"] = statePoints[Left];
-  document.getElementById("pointm").style["color"] = statePoints[findex];
-  document.getElementById("pointl").style["color"] = statePoints[Right];
-  setStateSrc([initialStateSrc[Left], initialStateSrc[findex], initialStateSrc[Right]])
-  };
- 
   
   //#FFDD00
   //#C4C4C4
