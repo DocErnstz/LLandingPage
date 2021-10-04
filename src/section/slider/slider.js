@@ -15,8 +15,9 @@ function Slider() {
   const [stateSrc, setStateSrc] = useState(["Actuar", "Pensar", "Parar"])
 useScrollPosition(
   ({ prevPos, currPos }) => {
-    console.log(currPos.y);
-    if(Math.abs(currPos.y) > 200){
+    var maxY = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    if(Math.abs(currPos.y) > (maxY/10)){
       if(!document.getElementById("title").classList.contains("bluranim")){
         document.getElementById("title").classList.add("bluranim");
       }
@@ -25,7 +26,7 @@ useScrollPosition(
         document.getElementById("textTitle").classList.add("bluranim2");
       }
     }
-    if(Math.abs(currPos.y) > 550){
+    if(Math.abs(currPos.y) > (maxY/4)){
        if(!document.getElementById("fballcontainer").classList.contains("SUUC")){
         document.getElementById("fballcontainer").classList.add("SUUC");
       }
@@ -40,17 +41,15 @@ useScrollPosition(
         document.getElementById("descrubicomo").classList.add("SUUC");
      }
     
-    }
-   if(Math.abs(currPos.y) > 950){
-     console.log("s3");
-   }
-    
+    }  
   },
   []
 )
   useEffect(() => {
-     //console.log(state);
-
+    setTimeout(() => {
+      console.log(document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    }, 2000)
+     
   }, []);
  
   const next = (e) => {

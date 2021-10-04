@@ -21,7 +21,9 @@ function Contact() {
 });
 useScrollPosition(
   ({ prevPos, currPos }) => {
-   if(Math.abs(currPos.y) > 1000){
+    var maxY = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+   if(Math.abs(currPos.y) > (maxY/2)){
      if(!document.getElementById("titleContact").classList.contains("comeandback")){
         document.getElementById("titleContact").classList.add("comeandback");
       }
