@@ -57,7 +57,7 @@ useScrollPosition(
             <h2 id="title">La vida te pide desiciones</h2>
             <p id="textTitle">te damos un <span>espacio</span> y un <span>método</span> para...</p>
         </div>
-        <div className="slider">
+        <div className="slider query">
           <div id="fballcontainer" className="fball">
             <div className="flip-card-inner">
               <div className="flip-card-front">
