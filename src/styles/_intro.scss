@@ -70,11 +70,13 @@
                  @include fontType(700, 10vw, #fff);
             }
             button.responsive.responsiveF{
-                width: 22vw;
+                width: 32vw;
                 height: 8vw;
+               
                 @include fontType(bold, 0.3vw, #6F6F6F);
                 a.responsive.responsiveF{
                     padding: 2.4vw;
+                    font-size: 0.3vw;
                     color: blueviolet;
                 }
             }
