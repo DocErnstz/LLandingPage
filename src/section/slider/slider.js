@@ -61,10 +61,10 @@ useScrollPosition(
           <div id="fballcontainer" className="fball">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                 <img src={require(`../../img/${stateSrc[2] + "F.png"}`).default} alt="Avatar" />
+                 <img src={PararF} alt="Avatar" />
               </div>
                <div className="flip-card-back">
-                 <img src={require(`../../img/${stateSrc[2] + "B.png"}`).default} alt="Avatar" />
+                 <img src={PararB} alt="Avatar" />
               </div>
             </div>
            
@@ -72,10 +72,10 @@ useScrollPosition(
             <div className="mainball" id="mainballcontainer">     
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src={require(`../../img/${stateSrc[1] + "F.png"}`).default} alt="Avatar" />
+                <img src={PensarF} alt="Avatar" />
               </div>
               <div className="flip-card-back">
-                <img src={require(`../../img/${stateSrc[1] + "B.png"}`).default} alt="Avatar" />
+                <img src={PensarB} alt="Avatar" />
               </div>
                
               </div>    
@@ -83,10 +83,10 @@ useScrollPosition(
            <div className="lball" id="lballcontainer">
              <div className="flip-card-inner">
                <div className="flip-card-front">
-                   <img src={require(`../../img/${stateSrc[0] + "F.png"}`).default} alt="Avatar" />
+                   <img src={ActuarF} alt="Avatar" />
                </div>
                <div className="flip-card-back">
-                   <img src={require(`../../img/${stateSrc[0] + "B.png"}`).default} alt="Avatar" />
+                   <img src={ActuarB} alt="Avatar" />
                </div>
                  
              </div>  
