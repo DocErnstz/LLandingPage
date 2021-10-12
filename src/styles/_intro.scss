@@ -72,9 +72,10 @@
             button.responsive.responsiveF{
                 width: 22vw;
                 height: 8vw;
-                @include fontType(bold, 2vw, #6F6F6F);
+                @include fontType(bold, 1vw, #6F6F6F);
                 a.responsive.responsiveF{
                     padding: 2.4vw;
+                    color: red;
                 }
             }
         }
