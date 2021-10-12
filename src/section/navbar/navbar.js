@@ -61,7 +61,7 @@ function Navbar() {
                 <p className="responsive">Somos una</p>
                 <h3 className="responsive">EXPERIENCIA</h3>
 
-                <button className="responsive"><a href={file} download="AboutTW" className="responsive">Descubre Como</a></button>
+                <button className="responsive responsiveF"><a href={file} download="AboutTW" className="responsive responsiveF">Descubre Como</a></button>
             </div>
         </div>
         
