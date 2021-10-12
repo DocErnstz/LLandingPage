@@ -69,14 +69,12 @@
             h3.responsive{
                  @include fontType(700, 10vw, #fff);
             }
-            button.responsive{
-                //#6F6F6F
+            button.responsive.responsiveF{
                 width: 22vw;
                 height: 8vw;
-                @include fontType(bold, 2vw, blue);
-                a{
+                @include fontType(bold, 2vw, #6F6F6F);
+                a.responsive.responsiveF{
                     padding: 2.4vw;
-                    color: blue;
                 }
             }
         }
