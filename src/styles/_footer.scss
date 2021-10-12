@@ -14,6 +14,94 @@
     color: #FFFFFF;
 }
 .footer1{
+    @media (max-width: 700px) {
+        &{
+            height: 160%;
+            margin-top: -3vw;
+            div.container{
+                div.array{
+                  
+                  
+                    & > div{
+                        margin: 0 2.4vw;
+                    }
+                    div:nth-child(1).responsive{
+                        
+                        h3{
+                             @include fontType(700, 6.94vw);
+                             font-size: 1.94vw;
+                        }
+                        .row{
+                            img{
+                                width: 6.8vw;
+                                height: 6.8vw;
+                            }
+                        }
+                    }
+                    div:nth-child(2).responsive{
+                         
+                        h3{
+                             @include fontType(700, 6.94vw);
+                             font-size: 1.94vw;
+                        }
+                        .row{
+                            &:nth-child(1){
+                                margin-bottom: 1.4vw;
+                            }
+                            p{
+                                @include fontType(500, 2.36vw);
+                                font-size: 1.94vw;
+                            }
+                            svg{
+                                margin-right: 20px;
+                                width: 3.2vw;
+                                height: 3.2vw;
+                            }
+                        }
+                    }
+                    div:nth-child(3).responsive{
+                         
+                        h3{
+                            @include fontType(700, 6.94vw);
+                            font-size: 1.94vw;
+                        }
+                        .row{
+                            svg{
+                                margin-right: 1.94vw;
+                                margin-left: -1vw;
+                                width: 4vw;
+                                height: 4vw;
+                            }
+                            p{
+                                @include fontType(500, 2.36vw);
+                                font-size: 1.94vw; 
+                            }
+                        }
+                    }
+                    div:nth-child(4).responsive{
+                         width: 40%;
+                        h3{
+                            @include fontType(700, 6.94vw);
+                            font-size: 1.94vw;
+                        }
+                        p{
+                            @include fontType(500, 4.36vw);
+                            font-size: 1.94vw;
+
+                        }
+                    }
+                    div:nth-child(5).responsive{
+                        
+                        img{
+                            width: 31.6vw;
+                            height: 11.1vw;
+                            margin: 2vw 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
     height: 75%;
     background-color: #FFDD00;
     margin-top: -1.5vw;
@@ -21,12 +109,14 @@
         width: 90%;
         height: 100%;
         display: flex;
+        
         justify-content: flex-end;
         align-items: flex-end;
         margin: 0 auto;
         .array{
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-start;
             .column{
@@ -112,9 +202,9 @@
             div:nth-child(5){
                 display: flex;
                 
-               svg{
-                   width: 20vw;
-                   height: 6vw;
+               img{
+                   width: 15.8vw;
+                   height: 5.55vw;
                    margin: 1vw 0;
 
                }
@@ -140,6 +230,12 @@
     }
 }
 .footer2{
+    @media (max-width: 700px) {
+        &{
+            font-size: 2vw;
+            height: 50%;
+        }
+    }
     height: 25%;
    color: white;
     background: #FFDD00;

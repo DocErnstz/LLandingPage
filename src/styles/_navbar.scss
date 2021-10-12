@@ -10,6 +10,7 @@
     }
 }
 
+
 #LandSection{
     position: relative;
     overflow: hidden;
@@ -18,6 +19,7 @@
     
     background-size: cover;
     background-repeat: no-repeat;
+    
     .soundIcon{
         position: absolute;
         height: 3.4vw;
@@ -65,7 +67,66 @@
             transform: translateX(0px);
         }
     }
-    
+    @mixin fontType($weight, $color, $line, $size){
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: $size;
+                        font-style: normal;
+                        font-weight: $weight;
+                        line-height: $line;
+                        color: $color;
+                        letter-spacing: 0em;
+                        text-align: center;
+                    }
+     @media (max-width: 700px){
+        img.soundIcon{
+            top: 20vw;
+            height: 6.4vw;
+            width: 6.4vw;
+        }
+        div.navbar{
+            height: 16vw;
+            div.nav{
+                div.nav_brand{
+                   
+                    svg{
+                        margin-top: -0.5vw;
+                        height: 7.4vw;
+                        width: 7.4vw;
+                    }
+                    div.letters{
+                        margin-left: 1.4vw;
+                        p{
+                            margin-left: 1vw;
+                             @include fontType(200, #fff, 4vw, 4vw);
+                        }
+                        h4{
+                             @include fontType(500, #fff, 3.6vw, 4.4vw);
+                        }
+                    }
+                }
+                 div.info{
+                     & > a.responsive{
+                         font-size: 2vw;
+                         line-height: 4vw;
+                         width: 25vw;
+                         height: 7.6vw;
+                        }
+                    nav.responsive{
+                        margin-right: 3.6vw;
+                        li.responsive{
+                            margin-right: 3.6vw;
+                            img.responsive{
+                                width: 6.8vw;
+                                height: 6.8vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+       
+    }
     .navbar{
         height: 8vw;
         position: absolute;
@@ -100,16 +161,7 @@
                     display: flex;
                     flex-direction: column;
                     margin-left: 0.7vw;
-                    @mixin fontType($weight, $color, $line, $size){
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: $size;
-                        font-style: normal;
-                        font-weight: $weight;
-                        line-height: $line;
-                        color: $color;
-                        letter-spacing: 0em;
-                        text-align: center;
-                    }
+                    
                     p{
                         margin-right: -1vw;
                        animation: SUSLeft 0.7s ease-in-out;
@@ -128,6 +180,8 @@
                     }
                 }
            }
+          
+    
            .info{
                display: flex;
                align-items: center;

@@ -64,10 +64,25 @@ text-align: center;
         }
     }
      @media (max-width: 700px){
-            .query.slider {
+           &{
+               .content{
+                   h2#title{
+                       font-size: 5vw;
+                       line-height: 8vw;
+                   }
+                   p#textTitle{
+                        font-size: 5vw;
+                       line-height: 8vw;
+                       span{
+                           font-size: 5vw;
+                           line-height: 8vw;
+                       }
+                   }
+               }
+               .query.slider {
                 width: 95vw;
-                $imgSizew: 48vw;
-                $imgSizeh: 47vw;
+                $imgSizew: 56vw;
+                $imgSizeh: 54vw;
                 flex-direction: column;
                 & > div{
                     width: $imgSizew;
@@ -78,6 +93,21 @@ text-align: center;
                     }
                 }
             }
+            .actions{
+                padding-bottom: 11vw;
+                button#descrubicomo{
+                    width: 25vw;
+                    height: 7.6vw;
+                    font-size: 2.22vw;
+                    line-height: 3.2vw;
+                    a#button{
+                        padding: 2.4vw;
+                    }
+                }
+            }
+
+           }
+            
         }
     .slider{
         display: flex;
@@ -153,6 +183,7 @@ text-align: center;
                  a{
                      text-decoration: none;
                      color: #6F6F6F;
+                     padding: 1.2vw;
                  }
                }
             button:active{

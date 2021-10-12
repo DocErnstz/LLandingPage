@@ -44,24 +44,24 @@ function Navbar() {
                     </div> 
                 </div>
                 <div className="info">
-                    <nav>
-                    <ul>
-                         <li><a href="https://www.instagram.com/thinkweek.company/"><img src={IG} alt="" /></a></li>
-                        <li><a href="https://www.linkedin.com/company/thinkweek"><img src={LI} alt="" /></a></li>
+                    <nav className="responsive">
+                    <ul className="responsive">
+                         <li className="responsive"><a href="https://www.instagram.com/thinkweek.company/"><img class="responsive" src={IG} alt="" /></a></li>
+                        <li className="responsive"><a href="https://www.linkedin.com/company/thinkweek"><img class="responsive" src={LI} alt="" /></a></li>
                                           
                     </ul>
                 </nav>
-                <a href="#contactUs"><p>Contact Us</p></a>
+                <a href="#contactUs" className="responsive"><p>Contact Us</p></a>
                 </div>
             </div>
         </div>
-        <div className="content">
+        <div className="content responsive" >
           
             <div className="text">
-                <p>Somos una</p>
-                <h3>EXPERIENCIA</h3>
+                <p className="responsive">Somos una</p>
+                <h3 className="responsive">EXPERIENCIA</h3>
 
-                <button><a href={file} download="true">Descubre Como</a></button>
+                <button className="responsive"><a href={file} download="AboutTW">Descubre Como</a></button>
             </div>
         </div>
         

@@ -81,11 +81,140 @@ html, body {
   z-index: 99;
 }
 #contactUs{
+  @mixin fontType($weight){
+           font-family: Montserrat;
+           font-style: normal;
+           font-weight: $weight;
+           font-size: 0.97vw;
+           line-height: 3.47vw;
+           color: #fff;
+          }
   
     overflow: hidden;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 700px){
+      & {
+        height: 180vw;
+        & > img{
+          height: 100%;
+        }
+        
+        .container{
+         
+          .content{
+             
+            flex-direction: column;
+            align-items: flex-start;
+            .img{
+              $down: 10vw;
+              img:nth-child(2).sizeAppear{
+                transform: translate(-4vw, calc(3vw + $down));
+              }
+              img:nth-child(3).sizeAppear{
+                transform: translate(-4vw, calc(7vw + $down));
+              }
+              div{
+                transform: translate(2.5vw, calc(8.5vw + $down));
+              }
+              @keyframes sizeSU{
+                from{
+                  width: 0vw;
+                  height: 0vw;
+                  opacity: 0;
+                }
+                to{
+                  width: 80vw;
+                  height: 76vw;
+                  opacity: 1;
+                }
+              }
+              @keyframes VSU {
+                0% {
+                  opacity: 0;
+                  clip-path: circle(0vw at center);
+                  width: 0vw;
+                  height: 0vw;
+                }
+                100% {
+                  opacity: 0.5;
+                  width: 52vw;
+                  height: 52vw; 
+                  clip-path: circle(26vw at center); 
+                }
+              }
+              
+             
+            } 
+            div.icontent{
+              
+              width: 100%;
+             h3#titleContact{
+             font-size: 10vw;
+             line-height: 10vw;
+             width: 100%;
+             text-align: center;
+            }
+            
+            
+            form{
+              align-items: center;
+              
+              input[type=name]#nombre{
+                background: #C4C4C4;
+                border-radius: 61px;
+                width: 56vw;
+                margin-top: 1.82vw;
+                padding: 0.4vw 3.48vw;
+                border: 0;
+                opacity: 0;
+                font-size: 1.94vw;
+                line-height: 6.94vw;
+              }
+              input[type=name]#compañia{
+                background: #C4C4C4;
+                border-radius: 61px;
+                width: 56vw;
+                margin-top: 1.82vw;
+                padding: 0.4vw 3.48vw;
+                border: 0;
+                opacity: 0;
+                font-size: 1.94vw;
+                line-height: 6.94vw;
+              }
+              input[type=email]#email{
+                background: #C4C4C4;
+                border-radius: 61px;
+                width: 56vw;
+                margin-top: 1.82vw;
+                padding: 0.4vw 3.48vw;
+                border: 0;
+                opacity: 0;
+                font-size: 1.94vw;
+                line-height: 6.94vw;
+              }
+              textarea#Mensaje{
+                width: 56vw;
+                height: 16.2vw;
+                padding: 0.4vw 3.44vw;
+                margin-top: 1.82vw;
+                font-size: 1.94vw;
+                line-height: 6.94vw;
+              }
+              input[type=submit]#consulta{
+                margin-top: 3.88vw;
+                width: 25vw;
+                height: 7.76vw;
+                font-size: 2.22vw;
+                line-height: 3.30vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
     height: 62vw; 
     width: 100%;
     img{
@@ -217,14 +346,7 @@ html, body {
         width: auto;
         margin-top: 3vw;
          align-items: left;
-         @mixin fontType($weight){
-           font-family: Montserrat;
-           font-style: normal;
-           font-weight: $weight;
-           font-size: 0.97vw;
-           line-height: 3.47vw;
-           color: #fff;
-          }
+         
          textarea {
            background: #C4C4C4;
            border-radius: 2vw;
