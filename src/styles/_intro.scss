@@ -70,9 +70,10 @@
                  @include fontType(700, 10vw, #fff);
             }
             button.responsive{
+                //#6F6F6F
                 width: 22vw;
                 height: 8vw;
-                @include fontType(bold, 2vw, #6F6F6F);
+                @include fontType(bold, 5px, red);
                 a{
                     padding: 2.4vw;
                 }
