@@ -46,7 +46,7 @@ function Navbar() {
                 <div className="info">
                     <nav className="responsive">
                     <ul className="responsive">
-                         <li className="responsive"><a href="https://www.instagram.com/thinkweek.company/"><img class="responsive" src={IG} alt="" /></a></li>
+                         <li className="responsive"><a href="https://www.instagram.com/mathlecturer/"><img class="responsive" src={IG} alt="" /></a></li>
                         <li className="responsive"><a href="https://www.linkedin.com/company/thinkweek"><img class="responsive" src={LI} alt="" /></a></li>
                                           
                     </ul>
