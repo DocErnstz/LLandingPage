@@ -25,7 +25,8 @@ function Navbar() {
              isMuted ? <img className="soundIcon" onClick={() => setMute()} src={OFF} alt="" /> : (<img className="soundIcon" onClick={() => setMute()} src={ON} alt="" />)
          }
          
-           <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_experiencia_versi%C3%B3n_final.mp4" loop={true} width={"104.1vw"} height={"59vw"} playing muted={isMuted} className="react-player"/>
+           <ReactPlayer url="" loop={true} width={"104.1vw"} height={"59vw"} playing muted={isMuted} className="react-player"/>
+           <div id="BackgroundYellow"></div>
            <div className="blend">
                 <img src={NCurve} alt="" />
                <div></div>
@@ -39,15 +40,15 @@ function Navbar() {
 </svg>
 
                     <div className="letters">
-                        <h4>Think</h4>
-                        <p>Week</p>
+                        <h4>Lorem</h4>
+                        <p>Ipsum</p>
                     </div> 
                 </div>
                 <div className="info">
                     <nav className="responsive">
                     <ul className="responsive">
-                         <li className="responsive"><a href="https://www.instagram.com/mathlecturer/"><img class="responsive" src={IG} alt="" /></a></li>
-                        <li className="responsive"><a href="https://www.linkedin.com/company/thinkweek"><img class="responsive" src={LI} alt="" /></a></li>
+                         <li className="responsive"><a href=""><img class="responsive" src={IG} alt="" /></a></li>
+                        <li className="responsive"><a href=""><img class="responsive" src={LI} alt="" /></a></li>
                                           
                     </ul>
                 </nav>

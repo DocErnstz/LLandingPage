@@ -13,8 +13,8 @@ function Footer() {
                    <div className="responsive">
                        <h3>Seguinos en redes</h3>
                     <div className="row">
-                        <a href="https://www.instagram.com/thinkweek.company/"><img src={IG} alt="" /></a>
-                        <a href="https://www.linkedin.com/company/thinkweek"><img src={LI} alt="" /></a>
+                        <a href=""><img src={IG} alt="" /></a>
+                        <a href=""><img src={LI} alt="" /></a>
                     </div>
                        
                    </div>
@@ -25,7 +25,7 @@ function Footer() {
                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM19.6 8.25L13.06 12.34C12.41 12.75 11.59 12.75 10.94 12.34L4.4 8.25C4.29973 8.19371 4.21192 8.11766 4.14189 8.02645C4.07186 7.93525 4.02106 7.83078 3.99258 7.71937C3.96409 7.60796 3.9585 7.49194 3.97616 7.37831C3.99381 7.26468 4.03434 7.15581 4.09528 7.0583C4.15623 6.96079 4.23632 6.87666 4.33073 6.811C4.42513 6.74533 4.53187 6.69951 4.6445 6.6763C4.75712 6.65309 4.87328 6.65297 4.98595 6.67595C5.09863 6.69893 5.20546 6.74453 5.3 6.81L12 11L18.7 6.81C18.7945 6.74453 18.9014 6.69893 19.014 6.67595C19.1267 6.65297 19.2429 6.65309 19.3555 6.6763C19.4681 6.69951 19.5749 6.74533 19.6693 6.811C19.7637 6.87666 19.8438 6.96079 19.9047 7.0583C19.9657 7.15581 20.0062 7.26468 20.0238 7.37831C20.0415 7.49194 20.0359 7.60796 20.0074 7.71937C19.9789 7.83078 19.9281 7.93525 19.8581 8.02645C19.7881 8.11766 19.7003 8.19371 19.6 8.25Z" fill="white"/>
 </svg>
-                                <p>info@thinkweek.company</p>
+                                <p>info@lorem.company</p>
                            </div>
                            <div className="row">
                                <svg className="responsive" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,16 +41,14 @@ function Footer() {
                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 2C8.13 2 5 5.13 5 9C5 13.17 9.42 18.92 11.24 21.11C11.64 21.59 12.37 21.59 12.77 21.11C14.58 18.92 19 13.17 19 9C19 5.13 15.87 2 12 2ZM12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.66304 14.2366 10.2989 13.7678 10.7678C13.2989 11.2366 12.663 11.5 12 11.5Z" fill="white"/>
 </svg>
-                           <p>España</p>
+                           <p>Argentina</p>
                        </div>
                    </div>
                     <div className="responsive">
                        <h3>Avisos Legales</h3>
-                       <p>Think Week 2021 © Todos los derechos reservados.</p>
+                       <p>Lorem ipsum 2021 © Todos los derechos reservados.</p>
                    </div>
-                    <div className="responsive">
-                       <img src={FB} />
-                   </div>
+                    
                </div>
            </div>
        </div>

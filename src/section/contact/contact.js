@@ -68,14 +68,7 @@ useScrollPosition(
     
     e.target.classList.add("disabled");
 
-    emailjs.sendForm("service_x04vuvd", "template_d9zpllb", e.target, "user_Hy82PGE5Z3eRCYvWWHAEi")
-    .then((result) => {
-      e.target.reset();
-       e.target.classList.remove("disabled");
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text);
-    });
+    
   }
   return (
      <section id="contactUs">
@@ -96,7 +89,7 @@ useScrollPosition(
              </form>
             </div>
             <div className="img" id="images">
-              <ReactPlayer url="https://file-ext.s3.amazonaws.com/video_ojo_version_final.mp4" loop={true} width={"26vw"} height={"26vw"} playing muted playbackRate={1.75}/>
+              <ReactPlayer url="" loop={true} width={"26vw"} height={"26vw"} playing muted playbackRate={1.75}/>
              <img src={BL} alt="" />
              <img src={SL} alt="" />
             </div>
